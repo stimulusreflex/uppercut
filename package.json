@@ -1,0 +1,32 @@
+{
+  "name": "@stimulus_reflex/uppercut",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "In-browser job processing engine based on web workers",
+  "source": "src/index.js",
+  "exports": "dist/uppercut.modern.js",
+  "main": "dist/uppercut.cjs",
+  "module": "dist/uppercut.module.js",
+  "unpkg": "dist/uppercut.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "prerelease": "yarn build",
+    "release": "npm publish && git commit -am \"$npm_package_name v$npm_package_version\" && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stimulusreflex/uppercut.git"
+  },
+  "author": "StimulusReflex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stimulusreflex/uppercut/issues"
+  },
+  "homepage": "https://github.com/stimulusreflex/uppercut#readme",
+  "devDependencies": {
+    "microbundle": "^0.13.3",
+    "prettier-standard": "^16.4.1"
+  }
+}
