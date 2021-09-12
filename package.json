@@ -9,7 +9,7 @@
   "module": "dist/uppercut.module.js",
   "unpkg": "dist/uppercut.umd.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx tape 'test/**/*.js'",
     "build": "microbundle",
     "dev": "microbundle watch",
     "prerelease": "yarn build",
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/stimulusreflex/uppercut#readme",
   "devDependencies": {
+    "fake-indexeddb": "^3.1.3",
     "microbundle": "^0.13.3",
     "prettier-standard": "^16.4.1",
     "tape": "^5.3.1"
